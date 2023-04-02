@@ -1,0 +1,22 @@
+#Kubernetes open source project hosted on GITHUB
+
+#Branching Strategy
+------------------
+
+Master/Main branch--> we create a new Branch --featurev1, featurev2---merge to Main--and then Delete
+Good Branching strategy---calc application ?
+
+New feature to existing code---given to other developers with branch name -featurexyz ---once testing is done ---merge req --Master
+
+feature1, feature2,feature3------------------> eventually added back to master branch
+
+Release branches ?
+------------------
+
+To deliver to Customers --we have done complete testing in feature branch
+we create a release branch  from master and deliver to customer 
+
+Master branch is for ACTIVE development.
+
+HOTFIX branch?
+Some prod bug fix issue ---1/2 days fix the code---> deliver to master and release branch and ship code with release branch to customer.
