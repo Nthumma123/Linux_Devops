@@ -1,0 +1,57 @@
+#This file is to ist advance GIT commands
+
+#To merge branch with Master
+git merge <test-branchname>
+
+#git rebase : The commits from child branch will be added at the top of the branch
+#go to child branch
+git checkout test
+git rebase master
+#go to master branch
+git checkout master
+git merge test
+git log
+
+
+#For changing the order of commit aso we use REBASE
+git rebase -i HEAD~4
+#rearrange the lines and save and quit
+
+#Removing unnecessary commits
+git rebase -i HEAD~4
+#remove pick and replace it with squash
+
+#Developer want to selectively pick few commit and add to master
+git cherry-pick <CommitID>
+
+
+#GIT AMMEND
+#what happens when a commited file is modified 
+#git tells as untracked file
+#when we DNT want to have a new commit for a very minor change
+We want to ammend changes to existing commit
+
+git commit --ammend -m "b"
+
+#Merge conflicts
+#When 2 developers commit the changes to the same file , we might face a merge conflict and original content of file is lost
+and merging fails
+Modify the source file as required then commit it
+git commit -m "merge commit"
+
+#how to delete a branch
+git branch -d test
+
+#list branch
+git branch
+
+
+#how to go to previous version of code?
+git reset --hard <commit ID>
+
+#remote repository
+git remote add origin <url>
+git push -u origin master
+git push -u origin --al 
+
+
