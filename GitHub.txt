@@ -1,0 +1,24 @@
+# Remote repo converted to Working Dir
+git init
+
+# status of repo
+git status
+
+# Moving all files to stagging area
+git add .
+
+# Moving files to local repo
+git commit -m "commited all files"
+
+#Display list of commits
+git log
+git log --oneline
+
+#create a branch
+git branch <branch-name>
+
+#Move from one branch to another branch
+git checkout <test-branch>
+git chekout master
+
+
